@@ -7,11 +7,22 @@ exports.up = function(knex, Promise) {
     t.increments().primary();
     t.string("first_name");
     t.string("last_name");
-    t.string("patronymic");
+    t.string("age");
     t.string("address");
+    t.string("sex");
+    t.string("occupation");
     t.string("email").unique();
     t.string("password");
-    t.json("relationship");
+    t.integer("salary"), t.integer("taxes");
+    t.integer("additionalIncome");
+    t.integer("MEE");
+    t.integer("emi");
+    t.string("country");
+    t.integer("monthlyExpenses");
+
+    t.integer("lifestyleMEE");
+
+    t.json("relationships");
     t.json("regular_expenses");
     t.json("assets");
     t.timestamps(true, true);
