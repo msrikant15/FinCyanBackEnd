@@ -10,7 +10,7 @@ const config = rc("api", {
   connection: {
     client: "pg",
     development: {
-      host: "127.0.0.1",
+      host: "postgres",
       database: "fincyan",
       user: "fincyan",
       password: "123123"

@@ -1,7 +1,6 @@
-FROM node:lts-slim as build
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+FROM node:12 as build
+COPY . /
 RUN npm i
-CMD [ "npm", "run","reset" ]
-CMD ["npm","run","dev"]
+ 
 EXPOSE 3000
+CMD  npm run-script reset && node index.js
