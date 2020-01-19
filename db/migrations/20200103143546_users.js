@@ -16,7 +16,7 @@ exports.up = function(knex, Promise) {
     t.integer("salary"), t.integer("taxes");
     t.integer("additionalIncome");
     t.integer("MEE");
-    t.integer("emi");
+    t.integer("EMI");
     t.string("country");
     t.integer("monthlyExpenses");
 

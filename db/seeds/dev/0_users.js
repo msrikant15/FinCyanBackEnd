@@ -14,6 +14,8 @@ exports.seed = function(knex, Promise) {
           first_name: "Alexandr",
           last_name: "Zosimchuk",
           email: "1duglas1@gmail.com",
+          relationships: "[]",
+          assets: "[]",
           password:
             "$2a$10$r7XLCsy6TSVsmf0.BN8zzePCnXUZ6Mt3KZ.vSA.5rjg0bkByqMYIO", // 123123
           code: "123456"
